@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-
+teste 7
             <div id=myModal class="modal fade bs-example-modal-sm" tabindex=-1 role=dialog aria-labelledby=mySmallModalLabel>
                 <div class="modal-dialog modal-sm">
                     <div class=modal-content>
