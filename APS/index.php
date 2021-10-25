@@ -55,7 +55,7 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading>Mapa das Queimadas</div>
+                    <div class=panel-heading>Mapa das Queimadas TESTE</div>
                     <div class=panel-body>
                         <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12 style=height:450px></div>
