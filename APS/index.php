@@ -69,14 +69,19 @@
                         <div class=modal-header>
                             <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button>
                                 <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
+                            teste1
                         </div>
                         <div class=modal-body>
                             <p id=msg></p>
+                            teste 2
                         </div>
+                        teste 3
                     </div>
+                    teste 4
                 </div>
+                teste 5
             </div>
-
+teste 6
             <div>teste</div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
