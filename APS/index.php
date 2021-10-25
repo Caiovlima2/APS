@@ -28,10 +28,9 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading>Informações obtidas via Google Maps API</div>
+                    <div class=panel-heading>Coordenadas Geográficas</div>
                     <div class=panel-body>
                         <form action=lib/salvar.php class=col-xs-12 method=post>
-                            <p class="help-block text-uppercase"><small><strong>Você está aqui</strong></small></p>
                             <div class=form-group>
                                 <label for=latitude>Latitude</label>
                                 <input type=text class=form-control name=latitude id=latitude placeholder=Latitude readonly=readonly>
@@ -45,8 +44,7 @@
                                 <input type=text class=form-control name=endereco id=endereco placeholder=Endereço readonly=readonly>
                             </div>
                             <div class=form-group>
-                                <button class="btn btn-primary getLocation"><span class="glyphicon glyphiconexclamation-sign" aria-hidden=true></span> Área alagada</button>
-                                <p class=help-block>Clique no botão acima para informar que você está em uma área de alagamento.</p>
+                                <button class="btn btn-primary getLocation"><span class="glyphicon glyphiconexclamation-sign" aria-hidden=true></span> Marcar área</button>
                             </div>
                         </form>
                     </div>
@@ -55,9 +53,9 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading>Mapa das Quaimadas</div>
+                    <div class=panel-heading>Mapa das Queimadas</div>
                     <div class=panel-body>
-                        <p class=help-block>Pontos de queimadas: <span id=pontos class=badge></span></p>
+                        <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12 style=height:450px></div>
                     </div>
                 </div>
