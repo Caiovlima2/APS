@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div id="map">teste</div>
+            <div>teste</div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
