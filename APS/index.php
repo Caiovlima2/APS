@@ -71,7 +71,7 @@
                                 <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
                         </div>
                         <div class=modal-body>
-                            <p id=msg></p>
+                            <p id=msg>teste</p>
                         </div>
                     </div>
                 </div>
