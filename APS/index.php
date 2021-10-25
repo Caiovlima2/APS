@@ -84,6 +84,8 @@
               src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
               async
             ></script>
+            TESTE
+            </div>
         
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
