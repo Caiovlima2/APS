@@ -13,9 +13,11 @@
         <meta name=viewport content="width=device-width, initial-scale=1">
         <title>Mapa de Queimadas</title>
         <meta name=description content="APS"/>
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        
         <link href=css/bootstrap.min.css rel=stylesheet>
-       
-        <script src=http://html5shiv.printshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
+    
       
     </head>
     <body>
@@ -75,6 +77,14 @@
                 </div>
             </div>
 
+            <div id="map"></div>
+
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+              async
+            ></script>
+        
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
             <script src=js/bootstrap.min.js></script>
@@ -126,6 +136,7 @@
                         center: new google.maps.LatLng(-23.5483498, -46.3801577),
                         mapTypeId:google.maps.MapTypeId.ROADMAP
                     });
+                                       
                     var e = new google.maps.InfoWindow();
                     var h = new google.maps.Geocoder;
                     var b, c;
