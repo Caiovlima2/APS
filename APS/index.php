@@ -14,9 +14,9 @@
         <title>Mapa de Queimadas</title>
         <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
-        <!--[if lt IE 9]>
-        <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
-        <![endif]-->
+       
+        <script src=http://html5shiv.printshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
+      
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
