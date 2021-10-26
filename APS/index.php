@@ -24,17 +24,17 @@
         <?php if ($detect->isMobile()):?>
             <div class=container>
                 <div class="col-lg-12 col-md-12 page-header">
-                    <h1><strong>Mapa de Queimadas</strong></h1>
+                    <h2><strong>Mapa de Queimadas</strong></h2>
                 </div>
             </div>
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading>Coordenadas Geográficas</div>
+                    <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
                     <div class=panel-body>
                         <form action=lib/salvar.php class=col-xs-12 method=post>
                             <div class=form-group>
-                                <label for=latitude>Latitude</label>
+                                <label for=latitude> Latitude</label>
                                 <input type=text class=form-control name=latitude id=latitude placeholder=Latitude readonly=readonly>
                             </div>
                             <div class=form-group>
@@ -55,9 +55,9 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading>Mapa das Queimadas:</div>
+                    <div class=panel-heading><strong>Mapa das Queimadas:</strong></div>
                     <div class=panel-body>
-                        <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
+                        <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12 style=height:450px></div>
                     </div>
                 </div>
