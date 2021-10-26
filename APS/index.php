@@ -15,9 +15,20 @@
         <meta name=description content="APS"/>
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        
+        <script>
+            
+            let map;
+
+            function initMap() {
+              map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+              });
+            }
+            
+        </script>
         <link href=css/bootstrap.min.css rel=stylesheet>
-    
+        <link href=css/mapa.css rel=stylesheet>
       
     </head>
     <body>
@@ -58,7 +69,14 @@
                     <div class=panel-heading><strong>Mapa das Queimadas:</strong></div>
                     <div class=panel-body>
                         <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
-                        <div id=map class=col-xs-12 style=height:450px></div>
+                        //<div id=map class=col-xs-12 style=height:450px></div>
+                        <div id="map"></div>
+
+                        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                        <script
+                          src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+                          async
+                        ></script>
                     </div>
                 </div>
             </div>
