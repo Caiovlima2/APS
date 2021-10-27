@@ -70,6 +70,11 @@
                     <div class=panel-body>
                         <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12></div>
+                         <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                         <script
+                           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
+                           async
+                         ></script>
                     </div>
                 </div>
             </div>
@@ -90,11 +95,7 @@
             </div>
 
 
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
-              async
-            ></script>
+           
         
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
