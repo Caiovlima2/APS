@@ -100,10 +100,9 @@
                 });
                 }
 
-                <script
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
                 async
-                ></script>
+               
 
                 $(document).ready(function(){
                     var h = new google.maps.Geocoder;
