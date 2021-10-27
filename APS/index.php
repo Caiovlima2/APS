@@ -69,41 +69,32 @@
                     <div class=panel-heading><strong>Mapa das Queimadas:</strong></div>
                     <div class=panel-body>
                         <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
-                        <div id=map class=col-xs-12 style=height:450px></div>
-                      
-                        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async></script>
+                        <div id=map class=col-xs-12></div>
                     </div>
                 </div>
             </div>
-teste 7
+        
             <div id=myModal class="modal fade bs-example-modal-sm" tabindex=-1 role=dialog aria-labelledby=mySmallModalLabel>
                 <div class="modal-dialog modal-sm">
                     <div class=modal-content>
                         <div class=modal-header>
                             <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button>
                                 <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
-                            teste1
+
                         </div>
                         <div class=modal-body>
                             <p id=msg></p>
-                            teste 2
                         </div>
-                        teste 3
                     </div>
-                    teste 4
                 </div>
-                teste 5
             </div>
-teste 6
+
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
               async
             ></script>
-            TESTE
-            </div>
         
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
