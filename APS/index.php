@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-
+            <div id=map class=col-xs-12></div>
             <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
             async
