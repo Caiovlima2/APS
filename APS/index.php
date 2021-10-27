@@ -15,6 +15,7 @@
         <meta name=description content="APS"/>
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script>
         <script>
             
             let map;
