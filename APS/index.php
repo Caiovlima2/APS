@@ -112,8 +112,7 @@
         endereco = document.getElementById("endereco");
         pontos = document.getElementById("pontos");
         if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(d)
-            latitude.innerHTML="Teste de coordenada";
+            navigator.geolocation.getCurrentPosition(d);
         }else{
             modal.innerHTML="O seu navegador não suporta Geolocalização.";
             $("#myModal").modal("show")
