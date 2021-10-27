@@ -19,6 +19,7 @@
         <!--[if lt IE 9]>
         <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
         <![endif]-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly" async></script>
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
@@ -100,10 +101,6 @@
                     zoom: 8,
                 });
                 }
-
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
-                async
-               
 
                 $(document).ready(function(){
                     var h = new google.maps.Geocoder;
