@@ -12,40 +12,28 @@
         <meta http-equiv=X-UA-Compatible content="IE=edge">
         <meta name=viewport content="width=device-width, initial-scale=1">
         <title>Mapa de Queimadas</title>
-        <meta name=description content="APS"/>
-        
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script>
-            
-            let map;
-
-            function initMap() {
-              map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8,
-              });
-            }
-            
-        </script>
+        <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
-        <link href=css/mapa.css rel=stylesheet>
-      
+        <!--[if lt IE 9]>
+        <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
+        <![endif]-->
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
             <div class=container>
                 <div class="col-lg-12 col-md-12 page-header">
-                    <h2><strong>Mapa de Queimadas</strong></h2>
+                    <h1><strong>Mapa de Queimadas</strong></h1>
                 </div>
             </div>
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
+                    <div class=panel-heading>Coordenadas Geográficas</div>
                     <div class=panel-body>
                         <form action=lib/salvar.php class=col-xs-12 method=post>
                             <div class=form-group>
-                                <label for=latitude> Latitude</label>
+                                <label for=latitude>Latitude</label>
                                 <input type=text class=form-control name=latitude id=latitude placeholder=Latitude readonly=readonly>
                             </div>
                             <div class=form-group>
@@ -66,45 +54,28 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading><strong>Mapa das Queimadas:</strong></div>
+                    <div class=panel-heading>Mapa das Queimadas</div>
                     <div class=panel-body>
-                        <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
+                        <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12 style=height:450px></div>
-                      
-                        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async></script>
                     </div>
                 </div>
             </div>
-teste 7
+
             <div id=myModal class="modal fade bs-example-modal-sm" tabindex=-1 role=dialog aria-labelledby=mySmallModalLabel>
                 <div class="modal-dialog modal-sm">
                     <div class=modal-content>
                         <div class=modal-header>
-                            <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button>
+                            <button type=button class=close data-dismiss=modal aria-label=Close><span ariahidden=true>×</span></button>
                                 <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
-                            teste1
                         </div>
                         <div class=modal-body>
                             <p id=msg></p>
-                            teste 2
                         </div>
-                        teste 3
                     </div>
-                    teste 4
                 </div>
-                teste 5
             </div>
-teste 6
 
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
-              async
-            ></script>
-            TESTE
-            </div>
-        
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
             <script src=js/bootstrap.min.js></script>
@@ -119,6 +90,21 @@ teste 6
             <?php endif; ?>
 
             <script>
+
+                let map;
+
+                function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8,
+                });
+                }
+
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
+                async
+                ></script>
+
                 $(document).ready(function(){
                     var h = new google.maps.Geocoder;
                     modal = document.getElementById("msg");
@@ -156,7 +142,6 @@ teste 6
                         center: new google.maps.LatLng(-23.5483498, -46.3801577),
                         mapTypeId:google.maps.MapTypeId.ROADMAP
                     });
-                                       
                     var e = new google.maps.InfoWindow();
                     var h = new google.maps.Geocoder;
                     var b, c;
