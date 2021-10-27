@@ -99,7 +99,7 @@ teste 6
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ535i7pyrCWB3iPOuQIu71Nx_W_PAqjk&callback=initMap&v=weekly"
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
               async
             ></script>
             TESTE
