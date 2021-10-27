@@ -16,10 +16,8 @@
         <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
         <link href=css/mapa.css rel=stylesheet>
-        <!--[if lt IE 9]>
-        <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
-        <![endif]-->
         
+       
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
@@ -78,9 +76,13 @@
                 </div>
             </div>
 
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
+            async
+            ></script>
             
             <script src=js/bootstrap.min.js></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly" async></script>
+            
             <?php if (isset($_GET['null']) == true): ?>
                 <script>
                     $(window).load(function(){
@@ -99,7 +101,7 @@
                     center: { lat: -34.397, lng: 150.644 },
                     zoom: 8,
                 });
-                }
+                }               
 
                 $(document).ready(function(){
                     var h = new google.maps.Geocoder;
@@ -161,7 +163,7 @@
                             k[c] = l[c].childNodes[0].nodeValue;
                             q[c] = k[c].split(":");
                             n[c] = q[c][0].split(",");
-                            pontos.innerHTML = k.length;
+                            pontos.innerHTML = k.length;    
                             o[c] = n[c][0];
                             p[c] = n[c][1];
                             m[c] = r.getElementsByTagName("endereco")[c];
