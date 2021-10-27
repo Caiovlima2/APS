@@ -69,7 +69,6 @@
         </div>
     </div>
         
-    <div id="map"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
