@@ -23,7 +23,13 @@
         </div>
     </div>
 
-
+    <?php else: ?>
+    <div class=container>
+        <div class="col-lg-12 col-md-12 page-header">
+            <h1 class=text><strong>Este sistema funciona apenas em dispositivo móvel.</strong></h1>
+        </div>
+    </div>
+    <?php endif ;?>
 
     </body>
 </html>
