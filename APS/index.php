@@ -15,7 +15,6 @@
         <meta name=description content="APS"/>
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg" type="text/javascript"></script>
         <script>
             
             let map;
@@ -97,11 +96,10 @@ teste 7
                 teste 5
             </div>
 teste 6
-            <div>teste</div>
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
-              src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ535i7pyrCWB3iPOuQIu71Nx_W_PAqjk&callback=initMap&v=weekly"
               async
             ></script>
             TESTE
