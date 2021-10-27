@@ -76,6 +76,20 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
       async
     ></script>
+        
+        <div id=myModal class="modal fade bs-example-modal-sm" tabindex=-1 role=dialog aria-labelledby=mySmallModalLabel>
+    <div class="modal-dialog modal-sm">
+        <div class=modal-content>
+            <div class=modal-header>
+                <button type=button class=close data-dismiss=modal aria-label=Close><span ariahidden=true>×</span></button>
+                    <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
+            </div>
+            <div class=modal-body>
+                <p id=msg></p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <?php else: ?>
     <div class=container>
