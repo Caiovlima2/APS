@@ -90,7 +90,94 @@
         </div>
     </div>
 </div>
+<?php if (isset($_GET['null']) == true): ?>
+    <script>
+        $(window).load(function(){
+            modal.innerHTML = "Não conseguimos obter suas coordenadas, tente novamente.";
+            $("#myModal").modal("show")
+        }) 
+    </script>
+<?php endif; ?>
 
+<script>
+    $(document).ready(function(){
+        var h = new google.maps.Geocoder;
+        modal = document.getElementById("msg");
+        latitude = document.getElementById("latitude");
+        longitude = document.getElementById("longitude");
+        endereco = document.getElementById("endereco");
+        pontos = document.getElementById("pontos");
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(d)
+        }else{
+            modal.innerHTML="O seu navegador não suporta Geolocalização.";
+            $("#myModal").modal("show")
+        }
+        function d(i){
+            var j = new google.maps.LatLng(i.coords.latitude,i.coords.longitude);
+            latitude.value = i.coords.latitude;
+            longitude.value = i.coords.longitude;
+            b = new google.maps.Marker({ position: new google.maps.LatLng(parseFloat(i.coords.latitude), parseFloat(i.coords.longitude)), map:g});
+            google.maps.event.addListener(b,"click",(function(k,l){
+                return function(){
+                            e.setContent("Seu local");
+                            e.open(g,k)}})(b,c));
+                            h.geocode({location:j},function(l,k){
+                                if(k===google.maps.GeocoderStatus.OK){
+                                    if(l[1]) endereco.value = l[1].formatted_address;
+                                    else window.alert(" Nenhum resultado encontrado");                                                
+                                }else{
+                                    window.alert("Falha: " + k)
+                                }
+                            })
+        }
+        var g = new google.maps.Map(document.getElementById("map"),{
+            zoom:10,
+            scrollwheel:false, 
+            center: new google.maps.LatLng(-23.5483498, -46.3801577),
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        });
+        var e = new google.maps.InfoWindow();
+        var h = new google.maps.Geocoder;
+        var b, c;
+        var f= new XMLHttpRequest();
+        f.onreadystatechange = function() if(f.readyState==4&&f.status==200) a(f);
+        f.open("GET","dados/dados.xml",true);
+        f.send();
+        function a(j){
+            var r = j.responseXML;
+            var l=[];
+            var k=[];
+            var o=[];
+            var p=[];
+            var n=[];
+            var q=[];
+            var m=[];
+            var i=[];
+            
+            for(c=0;c<r.getElementsByTagName("coordenadas").length;c++){
+                l[c] = r.getElementsByTagName("coordenadas")[c];
+                k[c] = l[c].childNodes[0].nodeValue;
+                q[c] = k[c].split(":");
+                n[c] = q[c][0].split(",");
+                pontos.innerHTML = k.length;
+                o[c] = n[c][0];
+                p[c] = n[c][1];
+                m[c] = r.getElementsByTagName("endereco")[c];
+                i[c] = m[c].childNodes[0].nodeValue;
+                b = newgoogle.maps.Marker({
+                        position: new google.maps.LatLng(parseFloat(o[c]),parseFloat(p[c])),map:g,icon:"forest-fire.png"
+                    });
+                google.maps.event.addListener(b,"click",(function(s,t){
+                    return function(){
+                        e.setContent("Coordenadas: "+o[t]+", "+p[t]+" <br> Endereço:"+i[t]);
+                        e.open(g,s)
+                    }
+                })(b,c))
+            }
+        }
+    });
+</script>
     <?php else: ?>
     <div class=container>
         <div class="col-lg-12 col-md-12 page-header">
