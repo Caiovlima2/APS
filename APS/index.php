@@ -15,6 +15,7 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
+        <link href=css/mapa.css rel=stylesheet>
         <!--[if lt IE 9]>
         <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
         <![endif]-->
@@ -66,7 +67,7 @@
                 <div class="modal-dialog modal-sm">
                     <div class=modal-content>
                         <div class=modal-header>
-                            <button type=button class=close data-dismiss=modal aria-label=Close><span ariahidden=true>×</span></button>
+                            <button type=button class=close data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button>
                                 <h4 class=modal-title id=mySmallModalLabel>Mapa de Queimadas</h4>
                         </div>
                         <div class=modal-body>
@@ -100,9 +101,10 @@
                 });
                 }
 
+                <script
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly"
                 async
-               
+                ></script>
 
                 $(document).ready(function(){
                     var h = new google.maps.Geocoder;
