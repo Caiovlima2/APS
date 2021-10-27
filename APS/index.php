@@ -19,7 +19,7 @@
         <!--[if lt IE 9]>
         <script src=http://html5shivprintshiv.googlecode.com/svn/trunk/html5shiv- printshiv.js></script>
         <![endif]-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly" async></script>
+        
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
@@ -78,10 +78,9 @@
                 </div>
             </div>
 
-            <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
-            <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
-            <script src=js/bootstrap.min.js></script>
             
+            <script src=js/bootstrap.min.js></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_Vw0vepcXiM2vw2gE7UNpu3PFOTUPEEg&callback=initMap&v=weekly" async></script>
             <?php if (isset($_GET['null']) == true): ?>
                 <script>
                     $(window).load(function(){
