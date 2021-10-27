@@ -117,7 +117,9 @@
             modal.innerHTML="O seu navegador não suporta Geolocalização.";
             $("#myModal").modal("show")
         }
-        function d(i){
+    });
+    
+    function d(i){
             var j = new google.maps.LatLng(i.coords.latitude,i.coords.longitude);
             latitude.value = i.coords.latitude;
             longitude.value = i.coords.longitude;
@@ -180,7 +182,7 @@
                 })(b,c))
             }
         }
-    });
+    
 </script>
     <?php else: ?>
     <div class=container>
