@@ -19,7 +19,7 @@
         <?php if ($detect->isMobile()):?>
         <div class=container>
         <div class="col-lg-12 col-md-12 page-header">
-        <h1><strong>Mapa de Queimadas</strong></h1>
+        <h2><strong>Mapa de Queimadas</strong></h2>
         </div>
     </div>
 
@@ -44,6 +44,16 @@
                     <button class="btn btn-primary getLocation"><span class="glyphicon glyphiconexclamation-sign" aria-hidden=true></span> Marcar área</button>
                 </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class=container>
+    <div class="panel panel-default">
+        <div class=panel-heading>Mapa das Queimadas</div>
+        <div class=panel-body>
+            <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
+            <div id=map class=col-xs-12 style=height:450px></div>
             </div>
         </div>
     </div>
