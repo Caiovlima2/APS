@@ -57,7 +57,7 @@
                     <div class=panel-heading>Mapa das Queimadas</div>
                     <div class=panel-body>
                         <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
-                        <div id=map class=col-xs-12 style=height:450px></div>
+                        <div id=map class=col-xs-12></div>
                     </div>
                 </div>
             </div>
@@ -191,6 +191,3 @@
         <?php endif ;?>
     </body>
 </html>
-
-
-
