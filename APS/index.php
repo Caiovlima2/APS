@@ -101,14 +101,14 @@
 
 
 	<script>
-		
+		if(navigator.geolocation){
 			navigator.getlocation.getCurrentPosition(function(position){
 			
 				document.getElementByID("latteste").innterHTML = "Latitude: " + position.coords.latitude;			
 			
 		
 		}
-		
+								 }
 	</script>
 	    
 	    
