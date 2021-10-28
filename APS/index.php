@@ -46,7 +46,30 @@
     </head>
     <body>
         <?php if ($detect->isMobile()):?>
-            <div class=container>
+          
+        <h1>Find your Current location</h1>  
+<button onclick="getlocation()">Click me</button>  
+<div id="location"></div>  
+<script>  
+    var x= document.getElementById("location");  
+    function getlocation() {  
+        if(navigator.geolocation){  
+            navigator.geolocation.getCurrentPosition(showPosition)  
+          }  
+        else  
+        {  
+             alert("Sorry! your browser is not supporting")  
+         } }  
+       
+     function showPosition(position){  
+       var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
+                document.getElementById("location").innerHTML = x;  
+     }  
+</script>  
+        
+        
+        
+        <div class=container>
                 <div class="col-lg-12 col-md-12 page-header">
                     <h2><strong>Mapa de Queimadas</strong></h2>
                 </div>
