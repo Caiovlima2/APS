@@ -104,6 +104,14 @@
 <?php endif; ?>
 
 <script type="text/javascript">
+    
+    <script>
+    $(document).ready(function(){
+        
+    getLocation();   
+        
+    }
+                      
    function getLocation(){
        if(!navigator.geolocation)
            return null;
