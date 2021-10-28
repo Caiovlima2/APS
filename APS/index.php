@@ -30,39 +30,7 @@
         
  </head>
     <body>
-        <?php if ($detect->isMobile()):?>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">
-        function obterGeolocalizacao()
-		{
-			if (!navigator.geolocation) {
-				$('#txtInfo').val('Não foi possível obter a sua geolocalização');
-				return;
-			}
-
-			if (location.protocol != 'https:') {
-				$('#txtInfo').val('Só é permitido obter a geolocalização em sites https');
-				return;
-			}
-
-			$('#txtInfo').val('obtendo geolocalização...');
-
-			navigator.geolocation.getCurrentPosition(function(position) {
-
-				var texto = 'latitude=' + position.coords.latitude + '\r\n' +
-				'longitude=' + position.coords.longitude + '\r\n' +
-				'precisao=' + position.coords.accuracy + ' metros\r\n' +
-				'velocidade=' + position.coords.speed + ' metros/segundo\r\n' +
-				'altitude=' + position.coords.altitude + ' metros\r\n' +
-				'precisaoAltitude=' + position.coords.altitudeAccuracy;
-
-				$('#txtInfo').val(texto);
-			});
-		}
-    </script>
-           <textarea id="txtInfo" rows="6" cols="50"></textarea>
-    <input type="button" value="Obter geolocalização" onclick="obterGeolocalizacao();" />
-        
+        <?php if ($detect->isMobile()):?>	    
         <div class=container>
         <div class="col-lg-12 col-md-12 page-header">
         <h2><strong>Mapa de Queimadas</strong></h2>
@@ -128,7 +96,23 @@
 <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
 <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
 <script src=js/bootstrap.min.js></script>
-        
+
+
+	<script>
+	
+		if(navigator.geolocation){
+		
+			navigator.getlocation.getCurrentPosition(function(position){
+			
+				document.getElementByID("lat").innterHTML = position.coords.latitude;			
+			
+			});
+		
+		}
+		
+	</script>
+	    
+	    
 <?php if (isset($_GET['null']) == true): ?>
     <script>
         $(window).load(function(){
