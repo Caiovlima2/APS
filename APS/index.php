@@ -36,7 +36,7 @@
                     <h2><strong>Mapa de Queimadas</strong></h2>
                 </div>
             </div>
-            
+        <p id=latt>teste</p>
             <div class=container>
                 <div class="panel panel-default">
                     <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
@@ -110,6 +110,10 @@
 
             <script>
                 $(document).ready(function(){
+                    
+                    document.getElementById("latt").innerHTML = "Latitude";
+                    
+                    
                     var h = new google.maps.Geocoder;
                     modal = document.getElementById("msg");
                     latitude = document.getElementById("latitude");
