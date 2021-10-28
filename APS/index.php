@@ -22,6 +22,19 @@
           });
         }
         </script>
+	    
+	    <script>
+		
+		document.getElementById(latteste).innterHTML = "Latitude: ";
+		if(navigator.geolocation){
+			navigator.getlocation.getCurrentPosition(function(position){
+			
+			document.getElementById("latteste").innterHTML = "Latitude: " + position.coords.latitude;			
+			
+		
+		}
+								 }
+	</script>
         <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
         <link href=css/mapa.css rel=stylesheet>
@@ -100,18 +113,7 @@
 <script src=js/bootstrap.min.js></script>
 
 
-	<script>
-		
-		document.getElementById(latteste).innterHTML = "Latitude: ";
-		if(navigator.geolocation){
-			navigator.getlocation.getCurrentPosition(function(position){
-			
-			document.getElementById("latteste").innterHTML = "Latitude: " + position.coords.latitude;			
-			
-		
-		}
-								 }
-	</script>
+	
 	    
 	    
 <?php if (isset($_GET['null']) == true): ?>
