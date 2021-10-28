@@ -25,7 +25,8 @@
 	    
 	    <script>
 		
-		document.getElementById(latteste).innterHTML = "Latitude: ";
+		document.getElementById("latteste").innterHTML = "Latitude: ";
+		document.getElementById('latteste').innterHTML = "Latitudeasdwadasd: ";
 		if(navigator.geolocation){
 			navigator.getlocation.getCurrentPosition(function(position){
 			
