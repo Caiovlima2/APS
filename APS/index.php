@@ -41,15 +41,15 @@
             <form action=lib/salvar.php class=col-xs-12 method=post>
                 <div class=form-group>
                     <label for=latitude>Latitude</label>
-                    <input type=text class=form-control name=latitude id=latitude placeholder=Latitude readonly=readonly>
+                    <input type=text class=form-control name=latitude id=lat placeholder=Latitude readonly=readonly>
                 </div>
                 <div class=form-group>
                     <label for=longitude> Longitude</label>
-                    <input type=text class=form-control name=longitude id=longitude placeholder=Longitude readonly=readonly>
+                    <input type=text class=form-control name=longitude id=long placeholder=Longitude readonly=readonly>
                 </div>
                 <div class=form-group>
                     <label for=longitude> Endereço</label>
-                    <input type=text class=form-control name=endereco id=endereco placeholder=Endereço readonly=readonly>
+                    <input type=text class=form-control name=endereco id=end placeholder=Endereço readonly=readonly>
                 </div>
                 <div class=form-group>
                     <button class="btn btn-primary getLocation"><span class="glyphicon glyphiconexclamation-sign" aria-hidden=true></span> Marcar área</button>
@@ -103,8 +103,17 @@
     </script>
 <?php endif; ?>
 
-<script>
-   
+<script type="text/javascript">
+   function getLocation(){
+       if(!navigator.geolocation)
+           return null;
+       navigator.getlocation.getCurrentPosition((pos)=>{
+      
+            document.getElementById("lat").innerText = pos.coords.latitude;  
+            document.getElementById("long").innerText = pos.coords.longitude; 
+                                                
+       });
+   }
     
 </script>
     <?php else: ?>
