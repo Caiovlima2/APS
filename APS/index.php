@@ -36,6 +36,8 @@
         <h2><strong>Mapa de Queimadas</strong></h2>
         </div>
     </div>
+	    
+	    <p id="latteste"> </p>
 
     <div class=container>
     <div class="panel panel-default">
@@ -104,7 +106,7 @@
 		
 			navigator.getlocation.getCurrentPosition(function(position){
 			
-				document.getElementByID("lat").innterHTML = position.coords.latitude;			
+				document.getElementByID("latteste").innterHTML = "Latitude: " + position.coords.latitude;			
 			
 			});
 		
