@@ -25,16 +25,17 @@
 	    
 	    <script>
 		
-		var lo = document.getElementById("latteste");
-		lo.innerHTML = "Latitude: ";
-		document.getElementById('latteste').innterHTML = "Latitudeasdwadasd: ";
 		if(navigator.geolocation){
 			navigator.getlocation.getCurrentPosition(function(position){
 			
-			document.getElementById("latteste").innterHTML = "Latitude: " + position.coords.latitude;			
-			
+			document.getElementById("latteste").innerHTML = "Latitude: " + position.coords.latitude;			
+			}
 		
-		}
+		}else{
+			
+						document.getElementById("latteste").innerHTML = "Latitude: " + position.coords.latitude;		 
+			
+			
 								 }
 	</script>
         <meta name=description content="APS"/>
