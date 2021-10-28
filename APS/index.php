@@ -66,6 +66,7 @@
 
     <div class=container>
     <div class="panel panel-default">
+	<div class=panel-heading>Mapa das Queimadas</div>
         <div class=panel-body>
             <p class=help-block>Selecione no mapa o ponto de queimada: <span id=pontos class=badge></span></p>
             <div id=map class=col-xs-12 style=height:450px></div>
