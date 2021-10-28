@@ -26,7 +26,12 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         <link href=css/mapa.css rel=stylesheet>
         
-         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         
+        
+ </head>
+    <body>
+        <?php if ($detect->isMobile()):?>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         function obterGeolocalizacao()
 		{
@@ -42,7 +47,7 @@
 
 			$('#txtInfo').val('obtendo geolocalização...');
 
-			navigator.geolocation.getCurrentPosition(function (position) {
+			navigator.geolocation.getCurrentPosition(function(position) {
 
 				var texto = 'latitude=' + position.coords.latitude + '\r\n' +
 				'longitude=' + position.coords.longitude + '\r\n' +
@@ -55,11 +60,6 @@
 			});
 		}
     </script>
-        
- </head>
-    <body>
-        <?php if ($detect->isMobile()):?>
-        
            <textarea id="txtInfo" rows="6" cols="50"></textarea>
     <input type="button" value="Obter geolocalização" onclick="obterGeolocalizacao();" />
         
