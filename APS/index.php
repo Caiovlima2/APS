@@ -26,7 +26,7 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         <link href=css/mapa.css rel=stylesheet>
         
-         <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         function obterGeolocalizacao()
 		{
