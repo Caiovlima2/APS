@@ -106,11 +106,11 @@
                 </script>
             <?php endif; ?>
 
-            <script>
-                $(document).ready(function(){
-                    
-                    document.getElementById("latt").innerHTML = "Latitude";
-                    
+            <script>                
+                
+                document.getElementById("latt").innerHTML = "Latitude";
+                
+                $(document).ready(function(){                
                     
                     var h = new google.maps.Geocoder;
                     modal = document.getElementById("msg");
