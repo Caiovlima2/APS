@@ -17,7 +17,16 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
         <link href=css/bootstrap.min.css rel=stylesheet>
-    
+        
+        <script>
+        function initMap() {
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+          });
+        }
+        </script>
+        
       
     </head>
     <body>
@@ -62,7 +71,7 @@
                     </div>
                 </div>
             </div>
-teste 7
+
             <div id=myModal class="modal fade bs-example-modal-sm" tabindex=-1 role=dialog aria-labelledby=mySmallModalLabel>
                 <div class="modal-dialog modal-sm">
                     <div class=modal-content>
@@ -73,20 +82,15 @@ teste 7
                         </div>
                         <div class=modal-body>
                             <p id=msg></p>
-                            teste 2
                         </div>
-                        teste 3
                     </div>
-                    teste 4
                 </div>
-                teste 5
             </div>
-teste 6
-            <div>teste</div>
+
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
             <script
-              src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkmC9ynKXEWnieZv1KcolHlLxiuJSYkk&callback=initMap&v=weekly"
               async
             ></script>
             TESTE
