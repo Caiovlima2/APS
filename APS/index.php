@@ -135,8 +135,8 @@
            return null;
        navigator.getlocation.getCurrentPosition((pos)=>{
       
-            document.getElementById("lat").innerText = pos.coords.latitude;  
-            document.getElementById("long").innerText = pos.coords.longitude; 
+            document.getElementById("lat").innerHTML = pos.coords.latitude;  
+            document.getElementById("long").innerHTML = pos.coords.longitude; 
                                                 
        });
    }
