@@ -20,24 +20,52 @@
           center: { lat: -23.54707, lng: -46.4947502 },
           zoom: 20,
           });
+		
+	  infoWindow = new google.maps.InfoWindow();
+
+  const locationButton = document.createElement("button");
+
+  locationButton.textContent = "Pan to Current Location";
+  locationButton.classList.add("custom-map-control-button");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+  locationButton.addEventListener("click", () => {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found.");
+          infoWindow.open(map);
+          map.setCenter(pos);
+        },
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
+  });
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(
+    browserHasGeolocation
+      ? "Error: The Geolocation service failed."
+      : "Error: Your browser doesn't support geolocation."
+  );
+  infoWindow.open(map);
+}	
         }
         </script>
-	    
-	    <script>
-		
-		if(navigator.geolocation){
-			navigator.getlocation.getCurrentPosition(function(position){
-			
-			document.getElementById("latteste").innerHTML = "Latitude: " + position.coords.latitude;			
-			}
-		
-		}else{
-			
-						document.getElementById("latteste").innerHTML = "Latitude: " + position.coords.latitude;		 
-			
-			
-								 }
-	</script>
+	
         <meta name=description content="APS"/>
         <link href=css/bootstrap.min.css rel=stylesheet>
         <link href=css/mapa.css rel=stylesheet>
@@ -52,9 +80,6 @@
         <h2><strong>Mapa de Queimadas</strong></h2>
         </div>
     </div>
-	    
-	    <p id="latteste">teste</p>
-
     <div class=container>
     <div class="panel panel-default">
         <div class=panel-heading>Coordenadas Geográficas</div>
@@ -82,9 +107,8 @@
 
     <div class=container>
     <div class="panel panel-default">
-        <div class=panel-heading>Mapa das Queimadas</div>
         <div class=panel-body>
-            <p class=help-block>Pontos de Queimadas: <span id=pontos class=badge></span></p>
+            <p class=help-block>Selecione no mapa o ponto de queimada: <span id=pontos class=badge></span></p>
             <div id=map class=col-xs-12 style=height:450px></div>
             </div>
         </div>
@@ -128,25 +152,7 @@
     </script>
 <?php endif; ?>
 
-<script type="text/javascript">
-    
-    <script>
-    $(document).ready(function(){
-        
-    getLocation();   
-        
-    }
-                      
-   function getLocation(){
-       if(!navigator.geolocation)
-           return null;
-       navigator.getlocation.getCurrentPosition((pos)=>{
-      
-            document.getElementById("lat").innerHTML = pos.coords.latitude;  
-            document.getElementById("long").innerHTML = pos.coords.longitude; 
-                                                
-       });
-   }
+<script>
     
 </script>
     <?php else: ?>
