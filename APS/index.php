@@ -111,9 +111,6 @@
     </script>
 <?php endif; ?>
 
-<script>
-    
-</script>
     <?php else: ?>
     <div class=container>
         <div class="col-lg-12 col-md-12 page-header">
