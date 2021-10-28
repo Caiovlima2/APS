@@ -64,9 +64,8 @@
             
             <div class=container>
                 <div class="panel panel-default">
-                    <div class=panel-heading><strong>Mapa das Queimadas:</strong></div>
                     <div class=panel-body>
-                        <p class=help-block>  Pontos de Queimadas: <span id=pontos class=badge></span></p>
+                        <p class=help-block>  Selecione no mapa o local do foco de incêndio: <span id=pontos class=badge></span></p>
                         <div id=map class=col-xs-12 style=height:450px></div>
                     </div>
                 </div>
