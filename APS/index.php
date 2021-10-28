@@ -51,7 +51,7 @@
                     <h2><strong>Mapa de Queimadas</strong></h2>
                 </div>
             </div>
-        <p id="latt">teste</p>
+        <h1 id="latt">teste</h1>
             <div class=container>
                 <div class="panel panel-default">
                     <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
