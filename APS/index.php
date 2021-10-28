@@ -100,9 +100,9 @@
 <script src=js/bootstrap.min.js></script>
 
 
-	<script type="text/javascript">
+	<script>
 		
-		document.getElementById("latteste").innterHTML = "Latitude: ";
+		document.getElementById(latteste).innterHTML = "Latitude: ";
 		if(navigator.geolocation){
 			navigator.getlocation.getCurrentPosition(function(position){
 			
