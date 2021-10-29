@@ -114,11 +114,17 @@
                 $(document).ready(function(){                
                     
                     var h = new google.maps.Geocoder;
-                    modal = document.getElementById("msg");
-                    latitude = document.getElementById("latitude");
-                    longitude = document.getElementById("longitude");
-                    endereco = document.getElementById("endereco");
-                    pontos = document.getElementById("pontos");
+                       modal = "Teste Modal";
+                       latitude = "Teste Latitude";
+                       longitude = "Teste Longitude";
+                       endereco = "Teste Endereço";
+                       pontos = "Teste Pontos";
+                       
+//                     modal = document.getElementById("msg");
+//                     latitude = document.getElementById("latitude");
+//                     longitude = document.getElementById("longitude");
+//                     endereco = document.getElementById("endereco");
+//                     pontos = document.getElementById("pontos");
                     if(navigator.geolocation){
                         navigator.geolocation.getCurrentPosition(d)
                     }else{
