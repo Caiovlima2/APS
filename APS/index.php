@@ -56,7 +56,7 @@
                                 <input type=text class=form-control name=endereco id=endereco placeholder=Endereço>
                             </div>
                             <div class=form-group>
-                                <button class="btn btn-primary getLocation"><span class="glyphicon glyphiconexclamation-sign" aria-hidden=true></span> Marcar área</button>
+                                <input type="submit" class="btn btn-primary getLocation" value="Marcar Area">
                             </div>
                         </form>
                     </div>
