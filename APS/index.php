@@ -42,7 +42,7 @@
                 <div class="panel panel-default">
                     <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
                     <div class=panel-body>
-                        <form action=src/salvar.php class=col-xs-12 method=post>
+                        <form action="src/salvar.php" class=col-xs-12 method=post>
                             <div class=form-group>
                                 <label for=latitude> Latitude</label>
                                 <input type=text class=form-control name=latitude id=latitude placeholder=Latitude>
