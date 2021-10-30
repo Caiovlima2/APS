@@ -23,6 +23,7 @@
         function initMap(la, lo) {
              alert(la);
             alert(lo);
+            document.getElementById("demo").innerHTML = la;
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: la, lng: lo },
             zoom: 15,
