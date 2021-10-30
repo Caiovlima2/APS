@@ -24,6 +24,8 @@
             center: { lat: -34.397, lng: 150.644 },
             zoom: 8,
           });
+            
+            getLocation();
         
         }
             
@@ -134,8 +136,6 @@ function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
 }
             </script>    
                 
