@@ -19,9 +19,6 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         
         <script>
-         
-            
-          getLocation();  
             
         function initMap() {
             
@@ -112,8 +109,7 @@
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-      alert(document.getElementById("latitude").value);
-                alert(document.getElementById("longitude").value);
+    initMap();
   } else {
     alert("Geolocalizão não suportada");
   }
@@ -126,11 +122,7 @@ function showPosition(position) {
 }
                 
                 $(document).ready(function(){
-                
-                getLocation();                
-                alert(document.getElementById("latitude").value);
-                alert(document.getElementById("longitude").value);
-                    
+                                    
                 });
             </script>    
                 
@@ -149,8 +141,7 @@ function showPosition(position) {
             <script>                
                 
                 $(document).ready(function(){   
-                    
-            
+                                
                     var h = new google.maps.Geocoder;
                                         
 //                     modal = document.getElementById("msg");
