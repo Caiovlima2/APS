@@ -1,17 +1,8 @@
 <?php
 
 echo "Teste";
-echo "$_POST[latitude]";
+echo "$_POST['latitude']";
 
-if($_POST["latitude"] != null){
-
-  echo "<script>alert(Estamos recebendo)</script>";
-
-}else{
-  
-  echo "<script>alert(Falha recebendo)</script>";
-  
-}
 //      if ($_POST['latitude'] != null && $_POST['longitude'] != null && $_POST['endereco'] != null){
 //         $f = fopen("../dados/dados.txt", "a+", 0);
 //         $linha = $_POST['latitude'] . ", " . $_POST['longitude'] . " : " . $_POST['endereco'] . "\n";
