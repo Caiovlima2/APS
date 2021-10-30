@@ -20,10 +20,10 @@
         
         <script>
             
-        function initMap() {
+        function initMap(la, lo) {
             
           map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: -23.4397631, lng: -46.5084277 },
+            center: { lat: la, lng: lo },
             zoom: 15,
           });            
             
@@ -109,7 +109,7 @@
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
-    initMap();
+    initMap(document.getElementById("latitude").value, document.getElementById().value);
   } else {
     alert("Geolocalizão não suportada");
   }
