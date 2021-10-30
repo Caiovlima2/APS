@@ -39,6 +39,7 @@
                     <h2><strong>Mapa de Queimadas</strong></h2>
                 </div>
             </div>
+        <button class="btn btn-primary" style="width:100%" onclick="getLocation()">Pegar Coordenadas</button>
             <div class=container>
                 <div class="panel panel-default">
                     <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
