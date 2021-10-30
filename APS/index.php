@@ -19,20 +19,22 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         
         <script>
+            
+            getLocation();
         function initMap() {
             
-          getLocation();
+          
             
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: document.getElementById("latitude").value, lng: document.getElementById("longitude").value },
             zoom: 8,
           });            
             
-            alert(document.getElementById("latitude").value);
-            alert(document.getElementById("longitude").value);
+            
                   
         }
-            
+            alert(document.getElementById("latitude").value);
+            alert(document.getElementById("longitude").value);
         </script>
         
       
