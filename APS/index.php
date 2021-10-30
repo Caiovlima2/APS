@@ -26,7 +26,8 @@
             center: { lat: la, lng: lo },
             zoom: 15,
           });            
-            
+            alert(la);
+            alert(lo);
             
                   
         }
