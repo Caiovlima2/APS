@@ -101,8 +101,8 @@
             <script>
                 
             var latit = document.getElementById("latitude");
-            var longit = document.getElementById("latitude");
-            var ender = document.getElementById("latitude");
+            var longit = document.getElementById("longitude");
+            var ender = document.getElementById("endereco");
                 
             latit.value = "Teste";
             longit.value = "Teste";
