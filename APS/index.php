@@ -100,26 +100,33 @@
             
             <script>
                 
-            var latit = document.getElementById("latitude");
-            var longit = document.getElementById("longitude");
-            var ender = document.getElementById("endereco");
+//             var latit = document.getElementById("latitude");
+//             var longit = document.getElementById("longitude");
+//             var ender = document.getElementById("endereco");
                 
-            latit.value = "Teste";
-            longit.value = "Teste";
-            ender.value = "Teste";
-//             var x = document.getElementById("demo");
-//             function getLocation() {
-//               if (navigator.geolocation) {
-//                 navigator.geolocation.getCurrentPosition(showPosition);
-//               } else {
-//                 x.innerHTML = "Geolocation is not supported by this browser.";
-//               }
-//             }
+//             latit.value = "Teste";
+//             longit.value = "Teste";
+//             ender.value = "Teste";
+                
+//             if(navigator.geolocation){
+            
+//                 navigator.geolocation.getCurrentPosition(PreenchePos);
+            
+//             }    
+            
+             var x = document.getElementById("latit");
+             function getLocation() {
+               if (navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(showPosition);
+               } else {
+                 x.value = "Geolocation is not supported by this browser.";
+               }
+             }
 
-//             function showPosition(position) {
-//               x.innerHTML = "Latitude: " + position.coords.latitude +
-//               "<br>Longitude: " + position.coords.longitude;
-//             }
+             function showPosition(position) {
+               x.value = "Latitude: " + position.coords.latitude +
+               "<br>Longitude: " + position.coords.longitude;
+             }
 //                 document.getElementById("latitude").value = "My value";
             
             </script>    
