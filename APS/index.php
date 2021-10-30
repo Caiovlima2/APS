@@ -45,15 +45,15 @@
                         <form action="/src/salvar.php" class="col-xs-12" method="post">
                             <div class=form-group>
                                 <label for=latitude> Latitude</label>
-                                <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude" readonly>
+                                <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude">
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Longitude</label>
-                                <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude" readonly>
+                                <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude">
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Endereço</label>
-                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço" readonly>
+                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço">
                             </div>
                             <div class=form-group>
                                 <input type="submit" class="btn btn-primary" value="Marcar Área">
