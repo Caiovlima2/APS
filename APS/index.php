@@ -20,6 +20,8 @@
         
         <script>
            
+            window.onLoad
+            
           getLocation();  
             
         function initMap() {
@@ -124,6 +126,12 @@ function showPosition(position) {
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
 }
+                
+                $(document).ready(function(){
+                
+                getLocation();                
+                
+                });
             </script>    
                 
             <?php if (isset($_GET['null']) == true): ?>
