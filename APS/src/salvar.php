@@ -6,20 +6,22 @@ $lat = $_POST['latitude'];
 $long = $_POST['longitude'];
 $end = $_POST['endereco'];      
 
-echo $lat;
-echo $long;
-echo $end;
 
-//       if ($_POST['latitude'] != null && $_POST['longitude'] != null && $_POST['endereco'] != null){
+
+       if ($lat != null && $_long != null && $end != null){
+          echo $lat;
+          echo $long;
+          echo $end;
 //          $f = fopen("../dados/dados.txt", "a+", 0);
 //          $linha = $_POST['latitude'] . ", " . $_POST['longitude'] . " : " . $_POST['endereco'] . "\n";
 //          fwrite($f, $linha, strlen($linha)); 
 //          fclose($f);
-//          echo "<script>alert("Deu certo!");</script>"     
+//         echo "<script>alert("Deu certo!");</script>"     
 //          echo "<script>window.location='../index.php';</script>";
-//       }else{
-//           echo "<script>alert("Deu errado!");</script>" 
+       }else{
+         echo "Vazio";
+//          echo "<script>alert("Deu errado!");</script>" 
 //           echo "<script>window.location='../index.php?null=true';</script>"; 
-              
-//       }
+             
+       }
 ?>
