@@ -1,7 +1,7 @@
 <?php
     require_once('src/geraxml.php'); 
     require_once('src/Mobile_Detect.php');
-    $detect = new Mobile_Detect;
+//    $detect = new Mobile_Detect;
 ?>
 <!doctype html>
 <html lang=pt-BR>
