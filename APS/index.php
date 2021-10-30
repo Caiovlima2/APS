@@ -116,6 +116,7 @@
 //             }    
             
              var x = document.getElementById("latit");
+             var y = document.getElementByID("longit");
              function getLocation() {
                if (navigator.geolocation) {
                  navigator.geolocation.getCurrentPosition(showPosition);
@@ -126,6 +127,7 @@
 
              function showPosition(position) {
                x.value = position.coords.latitude;
+                 y.value = "Teste";
              }
 //                 document.getElementById("latitude").value = "My value";
             
@@ -145,23 +147,18 @@
                 $(document).ready(function(){                
                     getLocation();
                     var h = new google.maps.Geocoder;
-                       modal = "Teste Modal";
-                       latitude = "Teste Latitude";
-                       longitude = "Teste Longitude";
-                       endereco = "Teste Endereço";
-                       pontos = "Teste Pontos";
-                       
+                                        
 //                     modal = document.getElementById("msg");
 //                     latitude = document.getElementById("latitude");
 //                     longitude = document.getElementById("longitude");
 //                     endereco = document.getElementById("endereco");
 //                     pontos = document.getElementById("pontos");
-                    if(navigator.geolocation){
-                        navigator.geolocation.getCurrentPosition(d)
-                    }else{
-                        modal.innerHTML="O seu navegador não suporta Geolocalização.";
-                        $("#myModal").modal("show")
-                    }
+//                     if(navigator.geolocation){
+//                         navigator.geolocation.getCurrentPosition(d)
+//                     }else{
+//                         modal.innerHTML="O seu navegador não suporta Geolocalização.";
+//                         $("#myModal").modal("show")
+//                     }
                     function d(i){
                         var j = new google.maps.LatLng(i.coords.latitude,i.coords.longitude);
                         latitude.value = i.coords.latitude;
