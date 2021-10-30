@@ -27,6 +27,9 @@
             center: { lat: latit, lng: longit },
             zoom: 8,
           });            
+            
+            alert(latit);
+            alert(longit);
                   
         }
             
