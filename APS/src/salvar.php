@@ -1,8 +1,15 @@
 <?php
 
 echo "Teste";
-$latitude = $_POST['latitude'];
-echo $latitude;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $name = $_POST['latitude'];
+  if (empty($name)) {
+    echo "Name is empty";
+  } else {
+    echo $name;
+  }
+}
 //      if ($_POST['latitude'] != null && $_POST['longitude'] != null && $_POST['endereco'] != null){
 //         $f = fopen("../dados/dados.txt", "a+", 0);
 //         $linha = $_POST['latitude'] . ", " . $_POST['longitude'] . " : " . $_POST['endereco'] . "\n";
