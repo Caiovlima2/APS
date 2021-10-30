@@ -20,9 +20,9 @@
         
         <script>
            
-        function initMap() {
+          getLocation();  
             
-          
+        function initMap() {
             
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: document.getElementById("latitude").value, lng: document.getElementById("longitude").value },
@@ -137,8 +137,7 @@ function showPosition(position) {
 
             <script>                
                 
-                $(document).ready(function(){                
-                    getLocation();
+                $(document).ready(function(){   
                     
             alert(document.getElementById("latitude").value);
             alert(document.getElementById("longitude").value);
