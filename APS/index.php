@@ -24,12 +24,12 @@
           getLocation();
             
           map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: latit, lng: longit },
+            center: { lat: $latit, lng: $longit },
             zoom: 8,
           });            
             
-            alert(latit);
-            alert(longit);
+            alert($latit);
+            alert($longit);
                   
         }
             
