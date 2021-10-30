@@ -116,8 +116,8 @@
             
 //             }    
             
-             var x = document.getElementById("latit");
-             var y = document.getElementByID("longit");
+             var x = document.getElementById("latitude");
+             var y = document.getElementByID("longitude");
              function getLocation() {
                if (navigator.geolocation) {
                  navigator.geolocation.getCurrentPosition(showPosition);
