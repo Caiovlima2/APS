@@ -1,6 +1,6 @@
 <?php
 
-$_SERVER["REQUEST_METHOD"] == "POST"
+$_SERVER["REQUEST_METHOD"] == "POST";
 
 echo $_POST['latitude'];
 echo $_POST['longitude'];
