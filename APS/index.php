@@ -24,7 +24,7 @@
             
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: -23.4397631, lng: -46.5084277 },
-            zoom: 8,
+            zoom: 20,
           });            
             
             
