@@ -112,8 +112,6 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
     //initMap(document.getElementById("latitude").value, document.getElementById().value);
-    alert(document.getElementById("latitude").value);
-    alert(document.getElementById("longitude").value);
   } else {
     alert("Geolocalizão não suportada");
   }
@@ -123,6 +121,8 @@ function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
+        alert(document.getElementById("latitude").value);
+    alert(document.getElementById("longitude").value);
 }
                 
                 $(document).ready(function(){
