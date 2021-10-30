@@ -2,9 +2,14 @@
 
 $_SERVER["REQUEST_METHOD"] == "POST";
 
-echo $_POST['latitude'];
-echo $_POST['longitude'];
-echo $_POST['endereco'];      
+$lat = $_POST['latitude'];
+$long = $_POST['longitude'];
+$end = $_POST['endereco'];      
+
+echo $lat;
+echo $long;
+echo $end;
+
 //       if ($_POST['latitude'] != null && $_POST['longitude'] != null && $_POST['endereco'] != null){
 //          $f = fopen("../dados/dados.txt", "a+", 0);
 //          $linha = $_POST['latitude'] . ", " . $_POST['longitude'] . " : " . $_POST['endereco'] . "\n";
