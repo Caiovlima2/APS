@@ -98,6 +98,12 @@
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
             <script src=js/bootstrap.min.js></script>
             
+            <script>
+            
+                document.getElementById("latitude").value = "My value";
+            
+            </script>    
+                
             <?php if (isset($_GET['null']) == true): ?>
                 <script>
                     $(window).load(function(){
@@ -108,8 +114,6 @@
             <?php endif; ?>
 
             <script>                
-                
-                document.getElementById("latt").innerHTML = "Latitude";
                 
                 $(document).ready(function(){                
                     
