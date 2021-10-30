@@ -99,8 +99,28 @@
             <script src=js/bootstrap.min.js></script>
             
             <script>
-            
-                document.getElementById("latitude").value = "My value";
+                
+            var latit = document.getElementById("latitude");
+            var longit = document.getElementById("latitude");
+            var ender = document.getElementById("latitude");
+                
+            latit.value = "Teste";
+            longit.value = "Teste";
+            ender.value = "Teste";
+//             var x = document.getElementById("demo");
+//             function getLocation() {
+//               if (navigator.geolocation) {
+//                 navigator.geolocation.getCurrentPosition(showPosition);
+//               } else {
+//                 x.innerHTML = "Geolocation is not supported by this browser.";
+//               }
+//             }
+
+//             function showPosition(position) {
+//               x.innerHTML = "Latitude: " + position.coords.latitude +
+//               "<br>Longitude: " + position.coords.longitude;
+//             }
+//                 document.getElementById("latitude").value = "My value";
             
             </script>    
                 
