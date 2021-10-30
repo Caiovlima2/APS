@@ -20,13 +20,14 @@
         
         <script>
         function initMap() {
-          map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: -34.397, lng: 150.644 },
-            zoom: 8,
-          });
             
-            getLocation();
-        
+          getLocation();
+            
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: latit, lng: long },
+            zoom: 8,
+          });            
+                  
         }
             
         </script>
@@ -50,15 +51,15 @@
                         <form action="/src/salvar.php" class="col-xs-12" method="post">
                             <div class=form-group>
                                 <label for=latitude> Latitude</label>
-                                <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude">
+                                <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude" readonly>
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Longitude</label>
-                                <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude">
+                                <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude" readonly>
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Endereço</label>
-                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço">
+                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço" readonly>
                             </div>
                             <div class=form-group>
                                 <input type="submit" class="btn btn-primary" value="Marcar Área">
