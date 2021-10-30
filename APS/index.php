@@ -1,7 +1,7 @@
 <?php
     require_once('src/geraxml.php'); 
     require_once('src/Mobile_Detect.php');
-//    $detect = new Mobile_Detect;
+    $detect = new Mobile_Detect;
 ?>
 <!doctype html>
 <html lang=pt-BR>
@@ -45,15 +45,15 @@
                         <form action="src/salvar.php" class=col-xs-12 method="post">
                             <div class=form-group>
                                 <label for=latitude> Latitude</label>
-                                <input type=text class=form-control name=latitude id=latitude placeholder=Latitude readonly>
+                                <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude de teste" readonly>
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Longitude</label>
-                                <input type=text class=form-control name=longitude id=longitude placeholder=Longitude readonly>
+                                <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude" readonly>
                             </div>
                             <div class=form-group>
                                 <label for=longitude> Endereço</label>
-                                <input type=text class=form-control name=endereco id=endereco placeholder=Endereço readonly>
+                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço" readonly>
                             </div>
                             <div class=form-group>
                                 <input type="submit" class="btn btn-primary" value="Enviar">
