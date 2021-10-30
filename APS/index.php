@@ -56,7 +56,7 @@
                                 <input type=text class=form-control name=endereco id=endereco placeholder=Endereço readonly>
                             </div>
                             <div class=form-group>
-                                <input type="submit" class="btn btn-primary getLocation" value="Marcar Area">
+                                <input type="submit" class="btn btn-primary" value="Marcar Area">
                             </div>
                         </form>
                     </div>
