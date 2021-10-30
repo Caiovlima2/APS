@@ -40,6 +40,7 @@
                 </div>
             </div>
         <button class="btn btn-primary" style="width:100%" onclick="getLocation()">Pegar Coordenadas</button>
+        <p id="demo"></p>
             <div class=container>
                 <div class="panel panel-default">
                     <div class=panel-heading><strong>Coordenadas Geográficas</strong></div>
@@ -116,21 +117,19 @@
             
 //             }    
             
-             var x = document.getElementById("latitude");
-             var y = document.getElementByID("longitude");
-             function getLocation() {
-               if (navigator.geolocation) {
-                 navigator.geolocation.getCurrentPosition(showPosition);
-                 alert("Coordenadas resgatadas com sucesso!");
-               } else {
-                 x.value = "Geolocation is not supported by this browser.";
-               }
-             }
+            var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
 
-             function showPosition(position) {
-               x.value = position.coords.latitude;
-               y.value = "Teste";
-             }
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
 //                 document.getElementById("latitude").value = "My value";
             
             </script>    
