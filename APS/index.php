@@ -130,7 +130,9 @@ function showPosition(position) {
                 $(document).ready(function(){
                 
                 getLocation();                
-                
+                alert(document.getElementById("latitude").value);
+            alert(document.getElementById("longitude").value);
+                    
                 });
             </script>    
                 
@@ -147,8 +149,7 @@ function showPosition(position) {
                 
                 $(document).ready(function(){   
                     
-            alert(document.getElementById("latitude").value);
-            alert(document.getElementById("longitude").value);
+            
                     var h = new google.maps.Geocoder;
                                         
 //                     modal = document.getElementById("msg");
