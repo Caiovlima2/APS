@@ -9,18 +9,18 @@ $end = $_POST['endereco'];
 
        if(empty($lat){
        
-              echo "<script type='javascript'>alert('Latitude Vazia');";
+              echo "<script type='text/javascript'>alert('Latitude Vazia');</script>";
               echo "<script>window.location='../index.php';</script>";
               
-       }elseif(empty($long){
+//        }elseif(empty($long){
        
-              echo "<script type='javascript'>alert('Longitude Vazia');";
-              echo "<script>window.location='../index.php';</script>";
+//               echo "<script type='javascript'>alert('Longitude Vazia');";
+//               echo "<script>window.location='../index.php';</script>";
               
-       }elseif(empty($end){
+//        }elseif(empty($end){
        
-              echo "<script type='javascript'>alert('Endereço Vazio');";
-              echo "<script>window.location='../index.php';</script>";
+//               echo "<script type='javascript'>alert('Endereço Vazio');";
+//               echo "<script>window.location='../index.php';</script>";
               
        }else{
               
