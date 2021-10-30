@@ -25,7 +25,6 @@
             zoom: 8,
           });
         
-            getLocation();
         }
             
         </script>
@@ -144,7 +143,7 @@
             <script>                
                 
                 $(document).ready(function(){                
-                    
+                    getLocation();
                     var h = new google.maps.Geocoder;
                        modal = "Teste Modal";
                        latitude = "Teste Latitude";
