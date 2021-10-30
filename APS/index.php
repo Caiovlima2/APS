@@ -99,10 +99,7 @@
 
 
             <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkmC9ynKXEWnieZv1KcolHlLxiuJSYkk&callback=initMap&v=weekly"
-              async
-            ></script>
+            
         
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
@@ -131,7 +128,7 @@ function showPosition(position) {
                 
                 getLocation();                
                 alert(document.getElementById("latitude").value);
-            alert(document.getElementById("longitude").value);
+                alert(document.getElementById("longitude").value);
                     
                 });
             </script>    
@@ -144,7 +141,10 @@ function showPosition(position) {
                     }) 
                 </script>
             <?php endif; ?>
-
+<script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkmC9ynKXEWnieZv1KcolHlLxiuJSYkk&callback=initMap&v=weekly"
+              async
+            ></script>
             <script>                
                 
                 $(document).ready(function(){   
