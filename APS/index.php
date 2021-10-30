@@ -19,8 +19,7 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         
         <script>
-           
-            window.onLoad
+         
             
           getLocation();  
             
@@ -113,6 +112,8 @@
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
+      alert(document.getElementById("latitude").value);
+                alert(document.getElementById("longitude").value);
   } else {
     alert("Geolocalizão não suportada");
   }
