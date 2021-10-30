@@ -19,8 +19,7 @@
         <link href=css/bootstrap.min.css rel=stylesheet>
         
         <script>
-            
-            getLocation();
+           
         function initMap() {
             
           
@@ -33,8 +32,6 @@
             
                   
         }
-            alert(document.getElementById("latitude").value);
-            alert(document.getElementById("longitude").value);
         </script>
         
       
@@ -110,23 +107,7 @@
             <script src=js/bootstrap.min.js></script>
             
             <script>
-                
-//             var latit = document.getElementById("latitude");
-//             var longit = document.getElementById("longitude");
-//             var ender = document.getElementById("endereco");
-                
-//             latit.value = "Teste";
-//             longit.value = "Teste";
-//             ender.value = "Teste";
-                
-//             if(navigator.geolocation){
-            
-//                 navigator.geolocation.getCurrentPosition(PreenchePos);
-            
-//             }    
-            
-
-//                 document.getElementById("latitude").value = "My value";
+               
               var latit = document.getElementById("latitude");
              var longit = document.getElementById("longitude");
              var ender = document.getElementById("endereco");
@@ -158,6 +139,9 @@ function showPosition(position) {
                 
                 $(document).ready(function(){                
                     getLocation();
+                    
+            alert(document.getElementById("latitude").value);
+            alert(document.getElementById("longitude").value);
                     var h = new google.maps.Geocoder;
                                         
 //                     modal = document.getElementById("msg");
