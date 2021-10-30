@@ -135,7 +135,7 @@ function showPosition(position) {
                 </script>
             <?php endif; ?>
 <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkmC9ynKXEWnieZv1KcolHlLxiuJSYkk&callback=initMap&v=weekly"
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjkmC9ynKXEWnieZv1KcolHlLxiuJSYkk&callback=getLocation&v=weekly"
               async
             ></script>
             <script>                
