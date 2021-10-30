@@ -21,13 +21,13 @@
         <script>
             
         function initMap(la, lo) {
-            
+             alert(la);
+            alert(lo);
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: la, lng: lo },
             zoom: 15,
           });            
-            alert(la);
-            alert(lo);
+           
             
                   
         }
