@@ -119,16 +119,21 @@
             
 
 //                 document.getElementById("latitude").value = "My value";
-                                var x = document.getElementById("demo");
+              var latit = document.getElementById("latitude");
+             var longit = document.getElementById("longitude");
+             var ender = document.getElementById("endereco");
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
+    alert("Geolocalizão não suportada");
   }
 }
 
 function showPosition(position) {
+    latit.value = position.coords.latitude;
+    longit.value = position.coords.longitude;
+    endereco.value = position.coords.endereco;
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
