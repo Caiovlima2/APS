@@ -133,7 +133,7 @@ function getLocation() {
 function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
-    endereco.value = position.coords.endereco;
+    endereco.value = position.coords.address;
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
