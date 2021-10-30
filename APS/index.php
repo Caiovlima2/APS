@@ -121,14 +121,14 @@
              function getLocation() {
                if (navigator.geolocation) {
                  navigator.geolocation.getCurrentPosition(showPosition);
-                 alert("Coordenadas resgatadas!");
+                 alert("Coordenadas resgatadas com sucesso!");
                } else {
                  x.value = "Geolocation is not supported by this browser.";
                }
              }
 
              function showPosition(position) {
-              // x.value = position.coords.latitude;
+               x.value = position.coords.latitude;
                y.value = "Teste";
              }
 //                 document.getElementById("latitude").value = "My value";
