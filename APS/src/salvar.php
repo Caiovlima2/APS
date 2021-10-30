@@ -1,4 +1,6 @@
 <?php
+
+echo "$_POST['latitude'] teste"
 //      if ($_POST['latitude'] != null && $_POST['longitude'] != null && $_POST['endereco'] != null){
 //         $f = fopen("../dados/dados.txt", "a+", 0);
 //         $linha = $_POST['latitude'] . ", " . $_POST['longitude'] . " : " . $_POST['endereco'] . "\n";
