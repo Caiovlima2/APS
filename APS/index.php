@@ -108,10 +108,8 @@ function getLocation() {
             center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
             zoom: 15,
           });            
-           
-            
-                  
-        }
+                }
+                
 function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
