@@ -17,24 +17,7 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
         <link href=css/bootstrap.min.css rel=stylesheet>
-        
-        <script>
-            
-        function initMap() {
-
-            alert("Teste");
-            
-          map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
-            zoom: 15,
-          });            
-           
-            
-                  
-        }
-        </script>
-        
-      
+     
     </head>
     <body>
         <?php if ($detect->isMobile()):?>        
@@ -116,7 +99,19 @@ function getLocation() {
     alert("Geolocalizão não suportada");
   }
 }
+                
+  function initMap() {
 
+            alert("Teste");
+            
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
+            zoom: 15,
+          });            
+           
+            
+                  
+        }
 function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
