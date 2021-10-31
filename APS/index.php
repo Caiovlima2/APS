@@ -17,8 +17,10 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
         <script>  function initMap() {
-
-            alert("Teste");
+            var la = document.getElementById("latitude");
+            var lo = document.getElementById("longitude");
+            alert(la);
+            alert(lo);
             
            map = new google.maps.Map(document.getElementById("map"), {
              center: { lat: -23.0000, lng: -45.0000 },
