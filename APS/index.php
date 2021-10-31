@@ -19,8 +19,6 @@
         <script>  function initMap() {
             var la = parseFloat(document.getElementById("latitude").value);
             var lo = parseFloat(document.getElementById("longitude").value);
-            alert(la);
-            alert(lo);
             
            map = new google.maps.Map(document.getElementById("map"), {
              center: { lat: la, lng: lo },
