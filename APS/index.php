@@ -22,6 +22,8 @@
             
         function initMap() {
 
+            alert("Teste");
+            
           map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
             zoom: 15,
