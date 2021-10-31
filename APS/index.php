@@ -20,12 +20,10 @@
         
         <script>
             
-        function initMap(la, lo) {
-             alert(la);
-            alert(lo);
-            document.getElementById("demo").innerHTML = la;
+        function initMap() {
+
           map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: la, lng: lo },
+            center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
             zoom: 15,
           });            
            
@@ -121,7 +119,7 @@ function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
-    initMap(document.getElementById("latitude").value, document.getElementById().value);
+    initMap();
        
 }
                 
