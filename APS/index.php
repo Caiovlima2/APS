@@ -23,7 +23,7 @@
             alert(lo);
             
            map = new google.maps.Map(document.getElementById("map"), {
-             center: { lat: -23.0000, lng: -45.0000 },
+             center: { lat: la, lng: lo },
              zoom: 15,
            });            
                 }</script>
