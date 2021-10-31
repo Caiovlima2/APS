@@ -16,6 +16,16 @@
         
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
+        <script>  function initMap() {
+
+            alert("Teste");
+            
+          map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
+            zoom: 15,
+          });            
+                }</script>
+        
         <link href=css/bootstrap.min.css rel=stylesheet>
      
     </head>
@@ -91,6 +101,7 @@
               var latit = document.getElementById("latitude");
              var longit = document.getElementById("longitude");
              var ender = document.getElementById("endereco");
+                
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -99,17 +110,7 @@ function getLocation() {
     alert("Geolocalizão não suportada");
   }
 }
-                
-  function initMap() {
-
-            alert("Teste");
-            
-          map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: document.getElementById("latitude").value), lng: document.getElementById("longitude").value) },
-            zoom: 15,
-          });            
-                }
-                
+                                
 function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
