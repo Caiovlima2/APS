@@ -17,8 +17,8 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
         <script>  function initMap() {
-            var la = document.getElementById("latitude").value;
-            var lo = document.getElementById("longitude").value;
+            var la = parseFloat(document.getElementById("latitude").value);
+            var lo = parseFloat(document.getElementById("longitude").value);
             alert(la);
             alert(lo);
             
