@@ -17,8 +17,8 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         
         <script>  function initMap() {
-            var la = document.getElementById("latitude");
-            var lo = document.getElementById("longitude");
+            var la = document.getElementById("latitude").value;
+            var lo = document.getElementById("longitude").value;
             alert(la);
             alert(lo);
             
@@ -117,7 +117,6 @@ function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
-    alert("Teste");
     initMap();
        
 }
