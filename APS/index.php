@@ -121,7 +121,7 @@ function showPosition(position) {
     latit.value = position.coords.latitude;
     longit.value = position.coords.longitude;
     endereco.value = position.coords.address;
-    alert
+    alert("Teste");
     initMap();
        
 }
