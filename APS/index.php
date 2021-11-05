@@ -87,10 +87,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-            
         
             <script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js></script>
             <script src=http://maps.google.com/maps/api/js? type=text/javascript></script>
@@ -98,7 +94,7 @@
             
             <script>
                
-              var latit = document.getElementById("latitude");
+             var latit = document.getElementById("latitude");
              var longit = document.getElementById("longitude");
              var ender = document.getElementById("endereco");
                 
